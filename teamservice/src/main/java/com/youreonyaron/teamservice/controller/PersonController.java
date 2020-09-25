@@ -39,7 +39,8 @@ public class PersonController {
        return optPerson.map(person -> {
             Person t = new Person();
             t.setId(person.getId());
-            t.setName(person.getPlayerName());
+            t.setFirstName(person.getFirstName());
+            t.setLastName(person.getLastName());
             return t;
         }).orElseThrow(Exception::new);
     }

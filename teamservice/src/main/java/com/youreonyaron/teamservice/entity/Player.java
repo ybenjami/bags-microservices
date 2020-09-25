@@ -22,7 +22,8 @@ public class Player {
     @Id
     @GeneratedValue
     private Long id;
-    private String PlayerName;
+    private String firstName;
+    private String lastName;
     @ManyToMany(mappedBy = "players")
     Set<Team> teams = new HashSet<>() ;
 }
