@@ -48,7 +48,8 @@ public class TeamsController {
         Set<Person> players = new HashSet<>();
         team.getPlayers().stream().forEach((player) -> {
             Person p = new Person();
-            p.setName(player.getPlayerName());
+            p.setLastName(player.getLastName());
+            p.setFirstName(player.getFirstName());
             p.setId(player.getId());
             players.add(p);
         });
